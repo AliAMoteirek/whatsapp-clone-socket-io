@@ -8,7 +8,7 @@ const useLocalStorage = (key, initialValue) => {
   const [value, setValue] = useState(() => {
     const jsonValue = localStorage.getItem(prefixedKey);
 
-    if (jsonValue != null) {
+    if (jsonValue !== null) {
       return JSON.parse(jsonValue);
     }
 
